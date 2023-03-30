@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "TEXT-MINER",
+    "version": "1.0",
+    "description": "Writes the selected text's sentiment to console.",
+    "icons": {
+        "48" : "slash.png"
+    },
+    "content_scripts": [{
+        "css": ["styles.css"],
+        "js": [ "jquery.js", "content.js"],
+        "matches": ["https://*/*"]
+    }]
+}
